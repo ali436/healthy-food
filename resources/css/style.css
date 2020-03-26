@@ -1,0 +1,143 @@
+﻿/* --------------------------------------------*/
+/* BASIC SETUP */
+/*---------------------------------------------*/
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html
+{
+    color:#555;
+    font-family: 'Cairo', sans-serif;
+    font-weight:400;
+    font-size:20px;
+}
+.row
+{
+    max-width:1350px;
+    margin:0 auto;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/* HEADER */
+/*---------------------------------------------------------------------------------------------------*/
+header
+{
+    background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)) , url(../img/healthy.jpg);
+    background-size:cover;
+    height:100vh;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/* BUTTONS */
+/*---------------------------------------------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited      /* لتطبيق هذه التأثيرات على الازرار في حالة السكون والزيارة */
+{ display:inline-block;
+      padding:10px 30px;
+      text-decoration:none;  /* لحذف الخط تحت اسم الزر او تحت الابط */
+      font-size:80%;
+      border-radius:5px; /* لانشاء حواف لزوايا الزر */
+      transition:background-color 0.3s , color 0.3s; /* لاضافة مسافة زمنية اثناء احداث التأثير على الزر او وضع المؤشر عليه */
+}
+.btn-full:link,   
+.btn-full:visited
+{
+    background-color:#10ac84;
+    margin-left:30px;
+    color:#fff;
+    border:1px solid#10ac84; /* وضعنا اطار 1 بيكسل هنا لان الزر الاخر لديه اطار لكي لا يظهر فرق بين حجمي الزرين */
+}
+.btn-full:hover,  /* لتطبيق هذه التأثيرات على هذا الزر في حالتي وضع المؤشر عليه و النقر عليه */
+.btn-full:active
+{
+    background-color:#0d8d6c; /* اللون من موقع زيرو تو 255 لاننا نريد تدريجات اللون المستخدم السابق */
+}
+    
+
+.btn-border:link,
+.btn-border:visited
+{
+    border:1px solid#10ac84;
+    color:#10ac84;
+    
+}
+.btn-border:hover,
+.btn-border:active
+{
+    background-color:#0d8d6c;
+    color:#fff;
+}
+
+
+/*---------------------------------------------------------*/
+/* HEADINGS */
+/*---------------------------------------------------------*/
+h1
+{
+    margin-top:0;
+    margin-bottom:40px;
+    font-size:300%;  /* نستخدم النسبة المئوية اي ثلاثة اضعاف حجم الخط الرئيسي الذي كان 20 بيكسل */
+    font-weight:300;
+    word-spacing:5px;
+}
+
+.hero
+{   width:1140px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);     /* تستخدم هذه الخاصية ليتم اخذ مسافة 50% من منتصف الجملة بالنسبة للصفحة وليس  من طرفها وتعمل بمبدأ x,y */
+}
+.logo
+{
+    width:60px;
+    height:auto;
+    float:left;
+    margin-top:20px;
+}
+.main-nav
+{
+    list-style:none;
+    float:right;
+    margin-top:30px;
+    
+}
+.main-nav li
+{
+   border-bottom:3px solid transparent;  /* اضافة خط سفلي شفاف */
+   display:inline-block; 
+     
+}
+.main-nav li:hover   
+{
+   border-bottom:3px solid #10ac84;
+   transition:border-bottom 1.5s , color 1.5s ; 
+   padding-bottom:5px;        /* اضافة مسافة داخلية بين الخط السفلي والكلمة */
+  
+   
+} 
+
+
+.main-nav li a
+{
+    text-decoration:none;
+    margin-left:10px;
+    color:#555;
+}
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    
+}
+.main-nav li a:hover,
+.main-nav li a:active
+{
+   
+}
